@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APP4YOU</title>
+    <link rel="icon" href="/icon.png">
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="/" class="logo">
+                <img src="/logo.png" alt="APP4YOU Logo">
+            </a>
+            <div class="header-controls">
+                <div class="dropdown">
+                    <span class="dropdown-title">Sections</span>
+                    <div class="dropdown-content">
+                        <a href="/">Home</a>
+                        <a href="/contacts/">Contacts</a>
+                        <a href="/team/">Our Team</a>
+                        <a href="/ios-development/">iOS Development</a>
+                        <a href="/android-development/">Android Development</a>
+                        <a href="/design-ux-ui/">UX UI Design</a>
+                        <a href="/about-us/">About Us</a>
+                        <a href="/policy/">Policy</a>
+                    </div>
+                </div>
+                <button id="openModalBtn" class="request-btn">Leave a Request</button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+
+<section class="contact-hero animate-on-scroll">
+    <h1>Get in touch with APP4YOU</h1>
+    <p class="hero-subtitle">Tell us about your task &mdash; we will propose the optimal approach and get back to you quickly.</p>
+    <p class="hero-text">You can fill out the form or send an email. We reply during business hours.</p>
+</section>
+
+<section class="section">
+    <div class="contact-grid">
+        <div class="contact-form-wrapper animate-on-scroll">
+            <h2>Write to us</h2>
+            <form id="mainContactForm" class="contact-form" novalidate>
+                <div class="form-group honeypot-group">
+                    <label for="website">Website</label>
+                    <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+                </div>
+                
+                <div class="form-group">
+                    <label for="fullName">Full name *</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                    <span class="error-message">This field is required</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="company">Company (optional)</label>
+                    <input type="text" id="company" name="company">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error-message">Please enter a valid email address</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject *</label>
+                    <select id="subject" name="subject" required>
+                        <option value="" disabled selected>Select a subject</option>
+                        <option value="ios">iOS Development</option>
+                        <option value="android">Android Development</option>
+                        <option value="uxui">UX/UI Design</option>
+                        <option value="partnership">Partnership</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <span class="error-message">Please select a subject</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <span class="error-message">This field is required</span>
+                </div>
+
+                <div class="form-checkbox-group">
+                    <input type="checkbox" id="privacyConsent" name="privacyConsent" required>
+                    <label for="privacyConsent">I agree to the <a href="/policy/" target="_blank">Privacy Policy</a> *</label>
+                </div>
+
+                <button type="submit" id="submitContactBtn" class="btn-primary" disabled>Send message</button>
+                <div id="formSuccessMessage" class="success-message">Message sent. We will contact you shortly.</div>
+            </form>
+        </div>
+
+        <div class="contact-info-wrapper animate-on-scroll">
+            <h2>Contacts</h2>
+            <div class="contact-cards-container">
+                <div class="info-card">
+                    <div class="info-icon">✉️</div>
+                    <div class="info-text">
+                        <strong>Email</strong>
+                        <span>contact@app4you.pl</span>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">📍</div>
+                    <div class="info-text">
+                        <strong>Location</strong>
+                        <span>Warsaw, Poland</span>
+                    </div>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon">🕒</div>
+                    <div class="info-text">
+                        <strong>Business hours</strong>
+                        <span>Mon&ndash;Fri, 9:00&ndash;17:00 (CET)</span>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="legal-title">Legal information</h2>
+            <div class="legal-card">
+                <p><strong>Full legal name:</strong> APP4YOU SPÓŁKA Z OGRANICZONĄ ODPOWIEDZIALNOŚCIĄ</p>
+                <p><strong>Registered address:</strong> Popiołów 4A, 04-847 Warsaw, Poland</p>
+                <p><strong>KRS:</strong> 0000539086</p>
+                <p><strong>NIP (VAT ID):</strong> 9522134282</p>
+                <p><strong>REGON:</strong> 360665539</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section map-section animate-on-scroll">
+    <div class="map-header">
+        <h2>Where to find us</h2>
+        <p>Our office is located in Warsaw. You can schedule a meeting in advance &mdash; write to us via the form.</p>
+    </div>
+    <div class="map-container">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d156388.35438505505!2d20.921112836248356!3d52.23306532087531!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecc669a869f01%3A0x72f0be2a88ead3fc!2sWarsaw%2C%20Poland!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" 
+            width="100%" 
+            height="450" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+    <div class="map-actions">
+        <a href="https://maps.google.com/?q=Warsaw,Poland" target="_blank" class="btn-secondary">Open in Maps</a>
+    </div>
+</section>
+
+<section class="cta-section animate-on-scroll" style="background: linear-gradient(135deg, var(--color-dark-grey) 0%, #000 100%); margin-bottom: 0;">
+    <div class="cta-content">
+        <h2>Want to discuss your project faster?</h2>
+        <p>Describe the goal, timeline, and desired functionality &mdash; we will prepare a plan of next steps.</p>
+        <button id="scrollToFormBtn" class="btn-primary cta-btn">Send a message</button>
+    </div>
+</section>
+      
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-col">
+                <a href="/ios-development/">iOS Development</a>
+                <a href="/android-development/">Android Development</a>
+                <a href="/design-ux-ui/">UX UI Design</a>
+                <a href="/about-us/">About Us</a>
+            </div>
+            <div class="footer-col">
+                <a href="/">Home</a>
+                <a href="/contacts/">Contacts</a>
+                <a href="/team/">Our Team</a>
+                <a href="/policy/">Policy</a>
+            </div>
+            <div class="footer-col">
+                <p>Address: ul. Popiołów 4A, 04-847 Warsaw, Poland</p>
+                <p>Email: info@appfouryou.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; APP4YOU SP Z O O. All rights reserved.
+        </div>
+    </footer>
+
+    <div id="requestModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Leave a Request</h2>
+            <form id="requestForm">
+                <input type="text" placeholder="Name" required>
+                <input type="text" placeholder="Company">
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Comment" rows="4"></textarea>
+                <button type="submit">Submit</button>
+                <p class="privacy-notice">
+                    By clicking "Submit", you agree to the processing of personal data in accordance with the <a href="/policy/">privacy policy</a>.
+                </p>
+            </form>
+        </div>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>
